@@ -1,26 +1,18 @@
 import { FlexBetweenRow } from "@/components"
-import { colors } from "@/theme/colors"
-import { GlobalStateObject } from "@/types"
-import { SetStateAction } from "react"
+import { applicationProps } from "@/types"
 import Navigation from "./Navigation"
+import Logo from "./Logo"
 
-type Props = {
-  appState: GlobalStateObject,
-  setAppState: React.Dispatch<SetStateAction<GlobalStateObject>>
-}
+type Props = applicationProps
 
 export const Header = (props: Props) => {
-
-  const { appState } = props
   return (
     <FlexBetweenRow
       style={{
-        position: "fixed",
-        top: 0,
-        height: "6rem"
+        height: "5.5rem"
       }}
     >
-      <div>Logo</div>
+      <Logo />
       <Navigation {...props} />
     </FlexBetweenRow>
   )

@@ -2,13 +2,13 @@ export const Body = () => {
   return (
     <div
       style={{
-        height: "800px",
+        flexGrow: 1,
         overflowY: "auto"
       }}
     >
       <div
         style={{
-          height: "1000px"
+          // height: "1000px"
         }}
       >
         Body

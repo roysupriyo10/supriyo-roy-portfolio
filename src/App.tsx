@@ -15,15 +15,22 @@ function App() {
       className="app"
       style={{
         backgroundColor: `${colors[appState.themeMode].main}`,
-        color: `${colors[appState.themeMode].text}`,     
+        color: `${colors[appState.themeMode].text}`,
+        height: "100%"
       }}
     >
       <div
         className="container-wrapper"
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'space-between',
+          height: "100%"
+        }}
       >
         <Header appState={appState} setAppState={setAppState} />
         <Body />
-        <Footer appState={appState} setAppState={setAppState} />
+        <Footer />
       </div>
     </div>
   )

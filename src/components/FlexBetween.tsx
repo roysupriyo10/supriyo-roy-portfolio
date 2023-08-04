@@ -1,9 +1,4 @@
-type Props = {
-  children: JSX.Element[];
-  style?: React.CSSProperties
-}
-
-export const FlexBetweenRow = ({ children, style }: Props) => {
+export const FlexBetweenRow = ({ children, style, className }: React.HTMLAttributes<HTMLDivElement>) => {
   return (
     <div
       style={{
@@ -12,6 +7,7 @@ export const FlexBetweenRow = ({ children, style }: Props) => {
         alignItems: 'center',
         ...style,
       }}
+      className={className}
     >{children}</div>
   )
 }
