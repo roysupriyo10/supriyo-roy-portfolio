@@ -9,7 +9,7 @@ export const Card = ({ style, customColor, children, ...rest }: Props) => {
         ...style,
         margin: "2rem 0",
         backgroundColor: customColor,
-        borderRadius: "4px",
+        borderRadius: "6px",
         padding: "1rem",
         display: "flex",
         flexDirection: "column",

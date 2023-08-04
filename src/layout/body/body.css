@@ -8,14 +8,33 @@
 
 .card h2 {
   margin: 0.6rem 0 1rem 0;
+  font-size: 2.1em;
 }
 
 .card h4 {
-  font-weight: 300; 
+  font-weight: 300;
+  margin-bottom: 0.8rem;
+}
+
+.card h3 {
+  margin: 0.8rem 0 0.6rem 0;
+}
+
+.card ol li {
+  line-height: 1.4rem;
+}
+
+.card button:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 @media only screen and (min-width: 768px) {
   .section {
     margin: 5rem 0;
   }
+}
+
+a {
+  text-decoration: none;
 }
