@@ -1,26 +1,17 @@
 import { FlexBetweenRow } from '@/components'
-import { applicationProps } from '@/types'
+import { ApplicationState } from '@/types'
+import ToggleDark from './ToggleDark'
 
-type Props = applicationProps
+type Props = ApplicationState
 
-const Navigation = ({ appState, setAppState }: Props) => {
+const Navigation = (props: Props) => {
   return (
     <FlexBetweenRow
       style={{
         width: "10rem"
       }}
     >
-      <input
-        type="checkbox"
-        name="theme-switch"
-        checked={appState.themeMode === 'dark' ? true : false}
-        onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
-          setAppState(previousState => ({
-            ...previousState,
-            themeMode: e.target.checked === true ? 'dark' : 'light'
-          }))
-        }}
-      />
+      <ToggleDark {...props} />
       <div>Works</div>
       <div>Home</div>
     </FlexBetweenRow>    

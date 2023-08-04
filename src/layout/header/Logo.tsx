@@ -1,10 +1,10 @@
 import LogoDark from '@/assets/logoDarkMode.png'
 import LogoLight from '@/assets/logoLightMode.png'
-import { applicationProps } from '@/types'
+import { ApplicationState } from '@/types'
 
 
 
-const Logo = ({ appState }: applicationProps) => {
+const Logo = ({ appState }: ApplicationState) => {
   return (
     <img
       style={{

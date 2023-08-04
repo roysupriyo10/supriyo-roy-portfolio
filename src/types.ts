@@ -7,7 +7,7 @@ export interface GlobalStateObject {
   
 }
 
-export type applicationProps = {
+export type ApplicationState = {
   appState: GlobalStateObject,
-  setAppState: React.Dispatch<SetStateAction<GlobalStateObject>>
+  setAppState?: React.Dispatch<SetStateAction<GlobalStateObject>>
 }

@@ -29,7 +29,7 @@ function App() {
         }}
       >
         <Header appState={appState} setAppState={setAppState} />
-        <Body />
+        <Body appState={appState} />
         <Footer />
       </div>
     </div>

@@ -1,9 +1,9 @@
 import { FlexBetweenRow } from "@/components"
-import { applicationProps } from "@/types"
+import { ApplicationState } from "@/types"
 import Navigation from "./Navigation"
 import Logo from "./Logo"
 
-export const Header = (props: applicationProps) => {
+export const Header = (props: ApplicationState) => {
   return (
     <FlexBetweenRow
       style={{

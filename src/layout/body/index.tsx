@@ -1,4 +1,7 @@
-export const Body = () => {
+import { ApplicationState } from "@/types"
+import { Hero } from "./hero"
+
+export const Body = (props: ApplicationState) => {
   return (
     <div
       style={{
@@ -11,7 +14,7 @@ export const Body = () => {
           // height: "1000px"
         }}
       >
-        Body
+        <Hero {...props} />
       </div>
     </div>
   )
