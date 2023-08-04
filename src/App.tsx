@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Footer, Header } from "./layout"
+import { Body, Footer, Header } from "./layout"
 
 import { GlobalStateObject } from "./types"
 import { colors } from "./theme/colors"
@@ -12,16 +12,17 @@ function App() {
 
   return (
     <div
-
       className="app"
       style={{
-        backgroundColor: `${colors[appState.themeMode].main}`
+        backgroundColor: `${colors[appState.themeMode].main}`,
+        color: `${colors[appState.themeMode].text}`,     
       }}
     >
       <div
         className="container-wrapper"
       >
         <Header appState={appState} setAppState={setAppState} />
+        <Body />
         <Footer appState={appState} setAppState={setAppState} />
       </div>
     </div>

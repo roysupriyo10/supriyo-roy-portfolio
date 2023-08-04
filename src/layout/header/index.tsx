@@ -1,27 +1,27 @@
+import { FlexBetweenRow } from "@/components"
 import { colors } from "@/theme/colors"
 import { GlobalStateObject } from "@/types"
 import { SetStateAction } from "react"
+import Navigation from "./Navigation"
 
 type Props = {
   appState: GlobalStateObject,
   setAppState: React.Dispatch<SetStateAction<GlobalStateObject>>
 }
 
-export const Header = ({ appState, setAppState }: Props) => {
+export const Header = (props: Props) => {
+
+  const { appState } = props
   return (
-    <div
+    <FlexBetweenRow
       style={{
-        backgroundColor: `${colors[appState.themeMode].main}`
+        position: "fixed",
+        top: 0,
+        height: "6rem"
       }}
     >
-      <button
-        onClick={() => setAppState(
-          previousState => ({
-            ...previousState,
-            themeMode: previousState.themeMode === 'dark' ? 'light' : 'dark'
-          })
-        )}
-      >Change Theme</button>
-    </div>
+      <div>Logo</div>
+      <Navigation {...props} />
+    </FlexBetweenRow>
   )
 }

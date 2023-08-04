@@ -2,6 +2,7 @@ interface Colors {
   main: string;
   secondary: string;
   accent: string;
+  text: string
 }
 
 interface ColorSetting {
@@ -14,10 +15,13 @@ export const colors: ColorSetting = {
     main: "#fffcfa",
     secondary: "#fbf6f1",
     accent: "#7c4e29",
+    text: "#111111"
+
   },
   dark: {
     main: "#383736",
     secondary: "#4a4a4a",
-    accent: "#fbf6f1"
+    accent: "#fbf6f1",
+    text: "#cacaca"
   }
 }

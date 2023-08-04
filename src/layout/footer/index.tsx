@@ -1,27 +1,23 @@
+import { FlexBetweenRow } from "@/components"
 import { colors } from "@/theme/colors"
-import { GlobalStateObject } from "@/types"
-import { SetStateAction } from "react"
+import { applicationProps } from "@/types"
+import SocialMedia from "./SocialMedia"
 
-type Props = {
-  appState: GlobalStateObject,
-  setAppState: React.Dispatch<SetStateAction<GlobalStateObject>>
-}
+type Props = applicationProps
 
-export const Footer = ({ appState, setAppState }: Props) => {
+export const Footer = ({ appState }: Props) => {
   return (
-    <div
+    <FlexBetweenRow
       style={{
+        position: "fixed",
+        width: "100%",
+        height: "60px",
+        bottom: 0,
         backgroundColor: `${colors[appState.themeMode].main}`
       }}
     >
-      <button
-        onClick={() => setAppState(
-          previousState => ({
-            ...previousState,
-            themeMode: previousState.themeMode === 'dark' ? 'light' : 'dark'
-          })
-        )}
-      >Change Theme</button>
-    </div>
+      <h4>Approach Me!</h4>
+      <SocialMedia />
+    </FlexBetweenRow>
   )
 }
