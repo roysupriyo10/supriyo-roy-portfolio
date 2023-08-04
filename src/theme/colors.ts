@@ -19,7 +19,7 @@ export const colors: ColorSetting = {
 
   },
   dark: {
-    main: "#383736",
+    main: "#181716",
     secondary: "#4a4a4a",
     accent: "#fbf6f1",
     text: "#cacaca"

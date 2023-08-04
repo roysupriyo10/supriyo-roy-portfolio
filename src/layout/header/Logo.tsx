@@ -1,12 +1,18 @@
-import React from 'react'
+import LogoDark from '@/assets/logoDarkMode.png'
+import LogoLight from '@/assets/logoLightMode.png'
+import { applicationProps } from '@/types'
 
-type Props = {}
 
-const Logo = (props: Props) => {
+
+const Logo = ({ appState }: applicationProps) => {
   return (
-    <div>
-      
-    </div>
+    <img
+      style={{
+        height: "3em",
+      }}
+      src={appState.themeMode === "dark" ? LogoDark : LogoLight}
+      alt="website-logo"
+    />
   )
 }
 

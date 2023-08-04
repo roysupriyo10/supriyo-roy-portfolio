@@ -3,16 +3,14 @@ import { applicationProps } from "@/types"
 import Navigation from "./Navigation"
 import Logo from "./Logo"
 
-type Props = applicationProps
-
-export const Header = (props: Props) => {
+export const Header = (props: applicationProps) => {
   return (
     <FlexBetweenRow
       style={{
         height: "5.5rem"
       }}
     >
-      <Logo />
+      <Logo {...props} />
       <Navigation {...props} />
     </FlexBetweenRow>
   )
