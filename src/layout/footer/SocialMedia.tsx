@@ -30,6 +30,7 @@ const SocialMedia = ({ appState }: ApplicationState) => {
             style={{
               textDecoration: "none",
               border: "none",
+              borderRadius: "6px",
               padding: "1rem 2rem",
               background: colors[appState.themeMode].accent,
               color: appState.themeMode === 'dark' ? colors.light.text : '#ffffff',
