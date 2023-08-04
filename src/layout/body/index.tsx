@@ -8,6 +8,7 @@ export const Body = (props: ApplicationState) => {
   return (
     <div
       style={{
+        borderRadius: "0.5rem",
         flexGrow: 1,
         overflowY: "auto"
       }}
