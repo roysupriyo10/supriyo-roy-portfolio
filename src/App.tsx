@@ -7,7 +7,8 @@ import { colors } from "./theme/colors"
 function App() {
 
   const [ appState, setAppState ] = useState<GlobalStateObject>({
-    themeMode: "dark"
+    themeMode: "dark",
+    isNavOpen: false
   })
 
   return (

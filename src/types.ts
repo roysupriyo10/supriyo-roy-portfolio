@@ -3,11 +3,11 @@ import { SetStateAction } from "react"
 type ThemeMode = "light" | "dark"
 
 export interface GlobalStateObject {
-  themeMode: ThemeMode,
-  
+  themeMode: ThemeMode;
+  isNavOpen: boolean
 }
 
 export type ApplicationState = {
   appState: GlobalStateObject,
-  setAppState?: React.Dispatch<SetStateAction<GlobalStateObject>>
+  setAppState?: React.Dispatch<SetStateAction<GlobalStateObject>>,
 }
