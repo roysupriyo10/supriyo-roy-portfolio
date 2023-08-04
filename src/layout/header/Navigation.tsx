@@ -27,10 +27,19 @@ const Navigation = (props: Props) => {
         :
         <div
           style={{
-            width: "5.5rem"
+            width: "7.5rem"
           }}
         >
-          <HamburgerMenuIcon {...props} />
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center"
+            }}
+          >
+            {props.appState.isNavOpen && (<p style={{zIndex: '1'}}>Close</p>)}
+            <HamburgerMenuIcon {...props} />
+          </div>
           <div
             style={{
               display: props.appState.isNavOpen ? "flex" : "none",

@@ -13,7 +13,7 @@ interface ColorSetting {
 export const colors: ColorSetting = {
   light: {
     main: "#fffcfa",
-    secondary: "#fbf6f1",
+    secondary: "#ffe7d2",
     accent: "#7c4e29",
     text: "#111111"
 

@@ -6,6 +6,7 @@ import sunDark from '@/assets/sunDarkMode.png'
 import sunLight from '@/assets/sunLightMode.png'
 import moonLight from '@/assets/moonLightMode.png'
 import moonDark from '@/assets/moonDarkMode.png'
+import { useMediaQuery } from '@/hooks'
 
 const ToggleDark = ({ appState, setAppState }: ApplicationState) => {
   return (
@@ -16,7 +17,7 @@ const ToggleDark = ({ appState, setAppState }: ApplicationState) => {
         alignItems: "center",
         gap: "0.5rem",
         marginRight: "0.3rem",
-        marginTop: "7rem"
+        marginTop: !useMediaQuery("sm") ? "7rem" : "0"
       }}
     >
       <img
