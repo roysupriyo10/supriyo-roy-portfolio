@@ -31,7 +31,7 @@ function App() {
       >
         <Header appState={appState} setAppState={setAppState} />
         <Body appState={appState} />
-        <Footer />
+        <Footer appState={appState} />
       </div>
     </div>
   )

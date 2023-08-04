@@ -27,7 +27,7 @@ const Navigation = (props: Props) => {
         :
         <div
           style={{
-            width: "7.5rem"
+            width: props.appState.isNavOpen ? "8.5rem" : "5rem"
           }}
         >
           <div

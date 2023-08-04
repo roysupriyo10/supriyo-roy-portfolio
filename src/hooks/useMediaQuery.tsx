@@ -12,7 +12,7 @@ const sizes: Size = {
   '2xl': '1536px',
 };
 
-export const useMediaQuery = (screen: string) => {
+export const useMediaQuery = (screen: "sm" | "md" | "lg" | "xl" | "2xl") => {
   const [matches, setMatches] = useState(false);
 
   useEffect(() => {
