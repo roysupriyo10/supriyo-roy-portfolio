@@ -8,8 +8,6 @@ import { colors } from '@/theme/colors'
 type Props = ApplicationState
 
 const Navigation = (props: Props) => {
-  console.log(useMediaQuery('sm'))
-
   return (
     <>
       {
