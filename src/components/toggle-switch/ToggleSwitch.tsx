@@ -1,6 +1,6 @@
 import './toggleswitch.css'
 
-const ToggleSwitch = ({ name, checked, onChange }: React.InputHTMLAttributes<HTMLInputElement>) => {
+export const ToggleSwitch = ({ name, checked, onChange }: React.InputHTMLAttributes<HTMLInputElement>) => {
   return (
     <label className='switch'>
       <input
@@ -13,5 +13,3 @@ const ToggleSwitch = ({ name, checked, onChange }: React.InputHTMLAttributes<HTM
     </label>
   )
 }
-
-export default ToggleSwitch

@@ -4,7 +4,7 @@ import { useMediaQuery } from "@/hooks"
 
 export const Hero = ({ appState }: ApplicationState) => {
   return (
-    <div className="hero-title">
+    <div className="hero-title section">
       <h1
         style={{
           marginTop: useMediaQuery("sm") ? "4rem" : "1rem",

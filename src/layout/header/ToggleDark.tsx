@@ -1,11 +1,11 @@
-import ToggleSwitch from '@/components/toggle-switch/ToggleSwitch'
+import { ToggleSwitch } from '@/components'
 import { ApplicationState } from '@/types'
 import React from 'react'
 
-import sunDark from '@/assets/sunDarkMode.png'
-import sunLight from '@/assets/sunLightMode.png'
-import moonLight from '@/assets/moonLightMode.png'
-import moonDark from '@/assets/moonDarkMode.png'
+import sunDark from '@/assets/icons/dark-light-toggle/sunDarkMode.png'
+import sunLight from '@/assets/icons/dark-light-toggle/sunLightMode.png'
+import moonLight from '@/assets/icons/dark-light-toggle/moonLightMode.png'
+import moonDark from '@/assets/icons/dark-light-toggle/moonDarkMode.png'
 import { useMediaQuery } from '@/hooks'
 
 const ToggleDark = ({ appState, setAppState }: ApplicationState) => {

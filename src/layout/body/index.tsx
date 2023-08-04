@@ -1,5 +1,8 @@
 import { ApplicationState } from "@/types"
 import { Hero } from "./hero"
+import { Projects } from "./projects"
+
+import './body.css'
 
 export const Body = (props: ApplicationState) => {
   return (
@@ -15,6 +18,7 @@ export const Body = (props: ApplicationState) => {
         }}
       >
         <Hero {...props} />
+        <Projects {...props} />
       </div>
     </div>
   )

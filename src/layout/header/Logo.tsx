@@ -1,5 +1,5 @@
-import LogoDark from '@/assets/logoDarkMode.png'
-import LogoLight from '@/assets/logoLightMode.png'
+import LogoDark from '@/assets/logo/logoDarkMode.png'
+import LogoLight from '@/assets/logo/logoLightMode.png'
 import { ApplicationState } from '@/types'
 
 

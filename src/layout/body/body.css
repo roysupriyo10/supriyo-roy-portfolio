@@ -1,0 +1,21 @@
+.section {
+  margin: 3rem 0;
+}
+
+.section h2 {
+  font-size: 1.8em;
+}
+
+.card h2 {
+  margin: 0.6rem 0 1rem 0;
+}
+
+.card h4 {
+  font-weight: 300; 
+}
+
+@media only screen and (min-width: 768px) {
+  .section {
+    margin: 5rem 0;
+  }
+}

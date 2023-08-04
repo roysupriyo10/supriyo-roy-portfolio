@@ -12,6 +12,10 @@ body,
   font-weight: 300;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .app {
   padding: 0 1rem;
 }
