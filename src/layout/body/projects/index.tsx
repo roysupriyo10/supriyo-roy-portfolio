@@ -13,7 +13,7 @@ export const Projects = (props: ApplicationState) => {
           color: colors[props.appState.themeMode].accent
         }}
       >Projects built by me</h2>
-      <Card customColor={colors[props.appState.themeMode].secondary}>
+ {*     <Card customColor={colors[props.appState.themeMode].secondary}>
         <h2>Finance Master</h2>
         <h4>A dashboard for monitoring all the key performance indicators of a company to keep track of its sustainability.</h4>
         <img src={FinanceMasterImg} alt="" />
@@ -66,7 +66,7 @@ export const Projects = (props: ApplicationState) => {
             </a>
           </button>
         </div>
-      </Card>
+      </Card>*}
     </div>
   )
 }
