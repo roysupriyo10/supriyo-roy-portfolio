@@ -61,7 +61,7 @@ export const Projects = (props: ApplicationState) => {
               borderRadius: "8px"
             }}
           >
-            <a href="" style={{ color: colors[props.appState.themeMode === 'dark' ? 'light' : 'dark'].text, textDecoration: "none" }} target="_blank">
+            <a href="https://finance-dashboard-react.netlify.app/" style={{ color: colors[props.appState.themeMode === 'dark' ? 'light' : 'dark'].text, textDecoration: "none" }} target="_blank">
               Live Demo
             </a>
           </button>
