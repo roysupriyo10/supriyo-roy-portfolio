@@ -2,7 +2,7 @@ import { Card } from "@/components"
 import { colors } from "@/theme/colors"
 import { ApplicationState } from "@/types"
 import FinanceMasterImg from '@/assets/screens/finance-master.png'
-import ThreadsImg from '@assets/screens/threads-nextjs.png'
+import ThreadsImg from '@/assets/screens/threads-nextjs.png'
 
 export const Projects = (props: ApplicationState) => {
   return (
